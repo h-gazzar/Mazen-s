@@ -24,10 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,4 +61,51 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  gap: 20px;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #9dd9ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005bb5;
 }
